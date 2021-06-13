@@ -1,0 +1,35 @@
+name: logo-hub
+
+on:
+  push:
+    branches:
+      - main
+  # 或者手动触发
+  workflow_dispatch:       # 设置手动触发，参考文档 https://github.blog/changelog/2020-07-06-github-actions-manual-triggers-with-workflow_dispatch/
+
+jobs:
+  build:
+    runs-on: ubuntu-18.04
+    steps:
+      - uses: actions/checkout@v2   # 将我们提交的代码 checkout (拷贝) 一份出来
+        with:
+          persist-credentials: false # otherwise, the token used is the GITHUB_TOKEN, instead of your personal token
+          fetch-depth: 0 # otherwise, you will failed to push refs to dest repo
+
+      - uses: actions/setup-node@v1  # 会建立 node 环境，便于我们执行 node 脚本
+      - uses: actions/cache@v2
+        with:
+          path: ~/.npm
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-node-
+      - name: build   # 编译
+        run: |
+          npm install
+          npm run build
+      - name: deploy
+        uses: JamesIves/github-pages-deploy-action@4.1.1
+        with:
+          branch: gh-pages # The branch the action should deploy to.
+          folder: build # The folder the action should deploy.
+        
