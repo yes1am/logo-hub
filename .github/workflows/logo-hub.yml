@@ -24,6 +24,7 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-node-
       - name: build   # 编译
+        # why CI=false? see: https://stackoverflow.com/questions/64557976/github-action-for-react-build-to-deploy-fails-with-error-1
         run: |
           npm install
           CI=false npm run build
@@ -32,4 +33,3 @@ jobs:
         with:
           branch: gh-pages # The branch the action should deploy to.
           folder: build # The folder the action should deploy.
-        
