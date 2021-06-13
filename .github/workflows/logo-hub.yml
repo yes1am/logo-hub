@@ -3,7 +3,7 @@ name: logo-hub
 on:
   push:
     branches:
-      - main
+      - master
   # 或者手动触发
   workflow_dispatch:       # 设置手动触发，参考文档 https://github.blog/changelog/2020-07-06-github-actions-manual-triggers-with-workflow_dispatch/
 
