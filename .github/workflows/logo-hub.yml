@@ -26,7 +26,7 @@ jobs:
       - name: build   # 编译
         run: |
           npm install
-          npm run build
+          CI=false npm run build
       - name: deploy
         uses: JamesIves/github-pages-deploy-action@4.1.1
         with:
