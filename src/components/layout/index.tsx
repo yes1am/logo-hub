@@ -1,6 +1,7 @@
 import React, { RefObject } from 'react'
 import { Button } from 'antd'
 import { download } from '../../util'
+import styles from './index.module.less'
 
 interface Props {
   infoContent: React.ReactElement;
@@ -8,19 +9,16 @@ interface Props {
 }
 
 const Index: React.FC<Props> = (props) => {
-  return <div>
-    <div className="info-container" style={{ border: '1px solid #333', padding: '8px', margin: '8px 0' }} >
-      <h2>相关介绍</h2>
+  return <div className={styles.container}>
+    <div>
       {props.infoContent}
     </div>
-    <div className="work-container" style={{ border: '1px solid #333', padding: '8px', margin: '8px 0' }} >
-      <h2>生成类似 LOGO</h2>
-      {props.children}
-      <div style={{ margin: '6px 0' }}>
-        <Button type="primary" onClick={() => download(props.node.current)}>
-          导出图片
-        </Button>
-      </div>
+    <li className={styles.text}>点击下面的文字, 生成类似 LOGO</li>
+    {props.children}
+    <div style={{ margin: '6px 0' }}>
+      <Button type="primary" onClick={() => download(props.node.current)}>
+        导出图片
+      </Button>
     </div>
   </div>
 }

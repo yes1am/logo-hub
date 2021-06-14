@@ -1,4 +1,52 @@
 .app {
-  width: 800px;
+  max-width: 800px;
   margin: 0 auto;
+  padding-bottom: 40px;
+}
+
+img {
+  max-width: 100%;
+}
+
+.item {
+  border: 1px solid #e1e4e8;
+  margin: 12px 0;
+  > h2{
+    padding: 16px 20px;
+    border-bottom: 1px solid #e1e4e8;
+    margin-bottom: 0;
+  }
+}
+
+.nav {
+  padding: 8px 4px;
+  ol {
+    margin-bottom: 0;
+  }
+}
+
+.h1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 0;
+}
+
+.sticky {
+  background: white;
+  z-index: 100;
+}
+
+.fork {
+  position: fixed;
+  right: 0;
+  top: 0;
+}
+
+.nav_border {
+  // border: 1px solid #e1e4e8;
+}
+
+.is_sticky {
+  box-shadow: 0 1px 8px 1px #aaa;
 }

@@ -23,6 +23,7 @@ module.exports = {
     'no-use-before-define': 'off',
     '@typescript-eslint/no-use-before-define': ['error'],
     'no-unused-vars': 'warn',
-    'react/prop-types': 'off'
+    'react/prop-types': 'off',
+    'react/jsx-indent': [2, 2]
   }
 }

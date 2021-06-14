@@ -3,20 +3,15 @@ import styles from './index.module.less'
 import Layout from '../../components/layout'
 import InfoItem from '../../components/info-item'
 
-const rotateStyle = {
-  transform: 'rotate(352deg)'
-}
-
-const defaultMainText = '文化有限'
-const defaultSubText = 'WE KNOW NOTHING'
+const defaultMainText = '支'
 
 const Index: React.FC<{}> = () => {
   const node = useRef<null | HTMLDivElement>(null)
   return <Layout
     infoContent={
       <InfoItem
-        link="https://podcasts.apple.com/us/podcast/%E6%96%87%E5%8C%96%E6%9C%89%E9%99%90fm/id1482731836"
-        imgSrc="https://raw.githubusercontent.com/yes1am/PicBed/master/img/313x0w.jpg"
+        link="https://apps.apple.com/cn/app/%E6%94%AF%E4%BB%98%E5%AE%9D-%E7%94%9F%E6%B4%BB%E5%A5%BD-%E6%94%AF%E4%BB%98%E5%AE%9D/id333206289"
+        imgSrc="https://raw.githubusercontent.com/yes1am/PicBed/master/img/230x0w-2.png"
       />
     }
     node={node}
@@ -25,17 +20,9 @@ const Index: React.FC<{}> = () => {
       <div className={styles.text_container}>
         <div
           className={styles.main_text}
-          style={rotateStyle}
           contentEditable
         >
           {defaultMainText}
-        </div>
-        <div
-          className={styles.sub_text}
-          style={rotateStyle}
-          contentEditable
-        >
-          {defaultSubText}
         </div>
       </div>
     </div>

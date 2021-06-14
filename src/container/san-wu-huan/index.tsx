@@ -1,6 +1,7 @@
 import React, { useRef } from 'react'
 import styles from './index.module.less'
 import Layout from '../../components/layout'
+import InfoItem from '../../components/info-item'
 
 const defaultMainText = '三五环'
 const defaultSubText = 'LIUFEI & HIS FRIENDS'
@@ -9,12 +10,10 @@ const Index: React.FC<{}> = () => {
   const node = useRef<null | HTMLDivElement>(null)
   return <Layout
     infoContent={
-      <>
-        <li>灵感来源: <a target="_blank" href="https://podcasts.apple.com/us/podcast/%E4%B8%89%E4%BA%94%E7%8E%AF/id1475113228" rel="noreferrer">https://podcasts.apple.com/us/podcast/%E4%B8%89%E4%BA%94%E7%8E%AF/id1475113228</a>
-        </li>
-        <li>原图</li>
-        <img style={{ width: 200, height: 200 }} src="https://raw.githubusercontent.com/yes1am/PicBed/master/img/313x0w.png" alt="" />
-      </>
+      <InfoItem
+        link="https://podcasts.apple.com/us/podcast/%E4%B8%89%E4%BA%94%E7%8E%AF/id1475113228"
+        imgSrc="https://raw.githubusercontent.com/yes1am/PicBed/master/img/313x0w.png"
+      />
     }
     node={node}
   >
