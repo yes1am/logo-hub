@@ -4,6 +4,7 @@
 
 ## 截图
 
+![frame_chrome_mac_light](https://user-images.githubusercontent.com/25051945/121843492-e9c56580-cd14-11eb-9848-2d5f9b5a32f6.png)
 
 ## 功能
 
