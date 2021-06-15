@@ -14,7 +14,7 @@
 ## 如何使用
 
 1. 打开网站: https://yes1am.github.io/logo-hub/#/
-2. 点击图片编辑文字 (某些 logo 如 Google, 需要在 Input 输入框中填写文字 )
+2. 直接编辑图片里面的文字 (某些 logo 如 Google, 需要在 Input 输入框中填写文字 )
 3. 点击 **导出图片** 按钮来下载图片
 
 ## 开发
