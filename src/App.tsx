@@ -1,4 +1,5 @@
 import React from 'react'
+
 import styles from './App.module.less'
 import WenHuaYouXian from './container/wen-hua-you-xian'
 import SanWuHuan from './container/san-wu-huan'
@@ -6,6 +7,10 @@ import MaiMai from './container/maimai'
 import BOSSZhiPin from './container/boss-zhipin'
 import ZhiFuBao from './container/zhi-fu-bao'
 import Google from './container/google'
+import WanFengShuo from './container/wan-feng-shuo'
+import HaiTianJiangYou from './container/hai-tian-jiang-you'
+import KeJiXianSheng from './container/ke-ji-xian-sheng'
+
 import { StickyContainer, Sticky } from 'react-sticky'
 import { Tag } from 'antd'
 import cx from 'classnames'
@@ -40,6 +45,21 @@ const LOGO_LIST = [
     title: 'Google',
     link: 'google',
     component: Google
+  },
+  {
+    title: '晚风说',
+    link: 'wan-feng-shuo',
+    component: WanFengShuo
+  },
+  {
+    title: '海天酱油',
+    link: 'hai-tian-jiang-you',
+    component: HaiTianJiangYou
+  },
+  {
+    title: '科技鲜声',
+    link: 'ke-ji-xian-sheng',
+    component: KeJiXianSheng
   }
 ]
 

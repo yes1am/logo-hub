@@ -3,12 +3,8 @@ import styles from './index.module.less'
 import Layout from '../../components/layout'
 import InfoItem from '../../components/info-item'
 
-const rotateStyle = {
-  transform: 'rotate(352deg)'
-}
-
-const defaultMainText = '文化有限'
-const defaultSubText = 'WE KNOW NOTHING'
+const defaultMainText = '海天酱油'
+const defaultSubText = 'HADAY SOY SAUCE'
 
 interface Props {
   logoType: string;
@@ -20,8 +16,8 @@ const Index: React.FC<Props> = (props) => {
     logoType={props.logoType}
     infoContent={
       <InfoItem
-        link="https://podcasts.apple.com/us/podcast/%E6%96%87%E5%8C%96%E6%9C%89%E9%99%90fm/id1482731836"
-        imgSrc="https://raw.githubusercontent.com/yes1am/PicBed/master/img/313x0w-1.jpg"
+        link="https://item.jd.com/743677.html"
+        imgSrc="https://raw.githubusercontent.com/yes1am/PicBed/master/img/O1CN01LMhof61NvxNZSjS0q_!!925431633-0-lubanu-s.jpg_430x430q90.jpg"
       />
     }
     node={node}
@@ -30,17 +26,21 @@ const Index: React.FC<Props> = (props) => {
       <div className={styles.text_container}>
         <div
           className={styles.main_text}
-          style={rotateStyle}
           contentEditable
         >
           {defaultMainText}
         </div>
-        <div
+        <div className={styles.sub_text_wrap}>
+          <div className={styles.left}>
+          </div>
+          <div
           className={styles.sub_text}
-          style={rotateStyle}
           contentEditable
         >
-          {defaultSubText}
+            {defaultSubText}
+          </div>
+          <div className={styles.right}>
+          </div>
         </div>
       </div>
     </div>
