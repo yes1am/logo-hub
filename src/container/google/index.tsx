@@ -6,10 +6,15 @@ import { Input } from 'antd'
 
 const defaultMainText = 'Google'
 
-const Index: React.FC<{}> = () => {
+interface Props {
+  logoType: string;
+}
+
+const Index: React.FC<Props> = (props) => {
   const node = useRef<null | HTMLDivElement>(null)
   const [text, setText] = useState(defaultMainText)
   return <Layout
+    logoType={props.logoType}
     infoContent={
       <InfoItem
         link="https://www.google.com/"

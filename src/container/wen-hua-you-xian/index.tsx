@@ -10,9 +10,14 @@ const rotateStyle = {
 const defaultMainText = '文化有限'
 const defaultSubText = 'WE KNOW NOTHING'
 
-const Index: React.FC<{}> = () => {
+interface Props {
+  logoType: string;
+}
+
+const Index: React.FC<Props> = (props) => {
   const node = useRef<null | HTMLDivElement>(null)
   return <Layout
+    logoType={props.logoType}
     infoContent={
       <InfoItem
         link="https://podcasts.apple.com/us/podcast/%E6%96%87%E5%8C%96%E6%9C%89%E9%99%90fm/id1482731836"

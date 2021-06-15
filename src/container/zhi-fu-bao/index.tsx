@@ -5,9 +5,14 @@ import InfoItem from '../../components/info-item'
 
 const defaultMainText = '支'
 
-const Index: React.FC<{}> = () => {
+interface Props {
+  logoType: string;
+}
+
+const Index: React.FC<Props> = (props) => {
   const node = useRef<null | HTMLDivElement>(null)
   return <Layout
+    logoType={props.logoType}
     infoContent={
       <InfoItem
         link="https://apps.apple.com/cn/app/%E6%94%AF%E4%BB%98%E5%AE%9D-%E7%94%9F%E6%B4%BB%E5%A5%BD-%E6%94%AF%E4%BB%98%E5%AE%9D/id333206289"

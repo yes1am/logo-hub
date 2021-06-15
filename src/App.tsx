@@ -88,7 +88,7 @@ function App () {
               LOGO_LIST.map((logo, index) => {
                 return <div key={logo.link} className={styles.item}>
                   <h2 id={logo.link}>{index + 1}. {logo.title}</h2>
-                  <logo.component />
+                  <logo.component logoType={logo.link} />
                 </div>
               })
             }
