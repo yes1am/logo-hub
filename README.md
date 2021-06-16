@@ -1,6 +1,10 @@
 <img width="200px" src="https://raw.githubusercontent.com/yes1am/PicBed/master/img/localhost_3000_logo-hub%20(2).png" />
 
-一款用于快速生成 Logo 的应用，Logo 灵感来源于播客 Logo, APP Logo, 以及各类网站.
+一款用于快速生成 logo 的应用，logo 灵感来源于播客 logo, APP logo, 以及各类网站.
+
+- 该项目受 [logoly](https://github.com/bestony/logoly) 启发，logoly 是一款 Pornhub 风格的 logo 生成器
+- 你也可以尝试 [logo-maker](https://www.namecheap.com/logo-maker/app/), 比 logo-hub 精致，还有字体，图标等可以选择
+
 
 ## 截图
 
