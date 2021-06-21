@@ -20,12 +20,7 @@ const Index: React.FC<Props> = (props) => {
         link="https://www.google.com/"
         imgSrc="https://raw.githubusercontent.com/yes1am/PicBed/master/img/googlelogo_color_272x92dp.png"
         imgStyle={{}}
-      >
-        <li style={{ color: 'red' }}><strong>注意: </strong>
-          {/* TODO: 这个导出似乎有 bug, 比如输入 Logohub，发现导出结果缺少字母 b, 而输入 BaidHub 却不会有 bug */}
-          这个导出似乎有 bug, 比如输入 Logohub，发现导出结果缺少字母 b, 而输入 BaidHub 却不会有 bug
-        </li>
-      </InfoItem>
+      />
     }
     node={node}
   >

@@ -6,7 +6,6 @@
   // 设置比较大的 line-height，否则小写字母 g 会溢出
   line-height: 1.5;
   display: inline-block;
-  margin: 20px 0;
   min-height: 100px;
 }
 
@@ -19,6 +18,10 @@
   font-size: 80px;
   width: 100%;
   font-weight: bold;
+  span {
+    // NOTE: 没有 padding 的话，有时候导出的字母不全
+    padding-right: 0.01px;
+  }
   span:nth-child(1) {
     color: #4284f3;
   }
