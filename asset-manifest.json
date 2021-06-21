@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/logo-hub/static/css/main.79df5c0c.chunk.css",
-    "main.js": "/logo-hub/static/js/main.f4b070ce.chunk.js",
-    "main.js.map": "/logo-hub/static/js/main.f4b070ce.chunk.js.map",
+    "main.css": "/logo-hub/static/css/main.815af692.chunk.css",
+    "main.js": "/logo-hub/static/js/main.f4e3e192.chunk.js",
+    "main.js.map": "/logo-hub/static/js/main.f4e3e192.chunk.js.map",
     "runtime-main.js": "/logo-hub/static/js/runtime-main.2a27472e.js",
     "runtime-main.js.map": "/logo-hub/static/js/runtime-main.2a27472e.js.map",
     "static/css/2.ebe1538b.chunk.css": "/logo-hub/static/css/2.ebe1538b.chunk.css",
@@ -12,14 +12,14 @@
     "static/js/3.a1787d16.chunk.js.map": "/logo-hub/static/js/3.a1787d16.chunk.js.map",
     "index.html": "/logo-hub/index.html",
     "static/css/2.ebe1538b.chunk.css.map": "/logo-hub/static/css/2.ebe1538b.chunk.css.map",
-    "static/css/main.79df5c0c.chunk.css.map": "/logo-hub/static/css/main.79df5c0c.chunk.css.map",
+    "static/css/main.815af692.chunk.css.map": "/logo-hub/static/css/main.815af692.chunk.css.map",
     "static/js/2.824ebac9.chunk.js.LICENSE.txt": "/logo-hub/static/js/2.824ebac9.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.2a27472e.js",
     "static/css/2.ebe1538b.chunk.css",
     "static/js/2.824ebac9.chunk.js",
-    "static/css/main.79df5c0c.chunk.css",
-    "static/js/main.f4b070ce.chunk.js"
+    "static/css/main.815af692.chunk.css",
+    "static/js/main.f4e3e192.chunk.js"
   ]
 }
